@@ -36,7 +36,11 @@ And in newly created .env file change the `VITE_API_URL=https://api.example.com`
 ### List of all available scripts
 
 `npm run dev`: Start development server.
+
 `npm run build`: Build for production.
+
 `npm run preview`: Preview production build.
+
 `npm run lint`: Lint the codebase.
+
 `npm run format`: Format the codebase.
