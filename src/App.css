@@ -1,42 +1,95 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #caf0f8;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 60px; /* Fixed height */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #023e8a;
+  color: white;
+}
+
+.nav-items-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-quiz-button {
+  color: #023047;
+  background-color: #ffb703;
+  text-decoration: none;
+  margin: 0 1em;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-family: 'Poppins', sans-serif; /* Change to your preferred font */
+  font-size: 2rem; /* Adjust size */
+  font-weight: 700;
+  color: #333; /* Dark color */
+  text-transform: uppercase;
+  letter-spacing: 1.5px; /* Adds spacing between letters */
+  display: inline-block;
+  background: linear-gradient(
+    135deg,
+    #ff8a00,
+    #e52e71
+  ); /* Gradient background */
+  -webkit-background-clip: text; /* Clips background to text */
+  -webkit-text-fill-color: transparent; /* Makes text take gradient color */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
   }
 }
 
-.card {
-  padding: 2em;
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
 }
 
-.read-the-docs {
-  color: #888;
+.content {
+  flex: 1;
+  margin-top: 75px; /* Prevent content from going under header */
+  margin-bottom: 50px; /* Prevent content from going under footer */
+  padding: 20px;
+  overflow-y: auto; /* Enable scrolling if needed */
+}
+
+.footer {
+  background: #8ecae6;
+  color: #023047;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: auto; /* Fixed height */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  flex-shrink: 0; /* Prevents footer from shrinking */
 }
