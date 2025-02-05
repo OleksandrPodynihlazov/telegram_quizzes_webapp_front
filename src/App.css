@@ -18,6 +18,7 @@
   position: fixed;
   top: 0;
   height: 60px; /* Fixed height */
+  z-index: 1;
 }
 
 .navbar {
@@ -77,8 +78,9 @@
   flex: 1;
   margin-top: 75px; /* Prevent content from going under header */
   margin-bottom: 50px; /* Prevent content from going under footer */
-  padding: 20px;
+  padding: 25px 20px;
   overflow-y: auto; /* Enable scrolling if needed */
+  height: 100vh;
 }
 
 .footer {
@@ -86,7 +88,7 @@
   color: #023047;
   padding: 15px;
   text-align: center;
-  position: fixed;
+  position: absolute;
   width: 100%;
   bottom: 0;
   height: auto; /* Fixed height */

@@ -59,7 +59,12 @@ export default [
       'jsx-a11y/anchor-is-valid': 'warn', // Prevent invalid anchor `<a>` usage
 
       // 🔹 Prettier Compatibility (Avoids Conflicts)
-      'prettier/prettier': 'warn', // Uses Prettier for formatting
+      'prettier/prettier': [
+        'warn',
+        {
+          endOfLine: 'auto',
+        },
+      ], // Uses Prettier for formatting
     },
   },
 ]

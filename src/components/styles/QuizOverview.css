@@ -1,0 +1,34 @@
+.quiz-page {
+    padding: 20px 20%;
+    background-color: #e8f1f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    height: -webkit-fill-available;
+}
+
+.quiz-page-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 100%;
+    width: 90%;
+}
+
+.quiz-page-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.quiz-page-description {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.quiz-page-stats {
+    font-size: 1em;
+    color: #666;
+}
